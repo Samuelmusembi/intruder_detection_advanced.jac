@@ -1,0 +1,12 @@
+jac
+node User {
+    has username: str;
+    has password_hash: str;
+}
+
+walker Authenticator {
+    can login with `root entry {
+        # validate credentials from visitor
+        # set auth token or session
+    }
+}
